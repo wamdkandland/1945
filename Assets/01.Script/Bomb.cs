@@ -9,8 +9,12 @@ public class Bomb : MonoBehaviour
     public TextMeshPro text;
 
     private void Start()
-    {        
+    {
         ApplyStyle();
+    }
+    private void Update()
+    {
+        transform.Rotate(0, 0, 60 * Time.deltaTime);
     }
 
     private void ApplyStyle()
