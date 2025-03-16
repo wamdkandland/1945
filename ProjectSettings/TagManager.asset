@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Gwall
+  - Enemy
+  - EWall
+  - PBullet
+  - EBullet
   layers:
   - Default
   - TransparentFX

@@ -37,4 +37,25 @@ public class Bomb : MonoBehaviour
             text.outlineColor = Color.white; // 외곽선 흰색
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            PlayerMove player = other.GetComponent<PlayerMove>();
+            if (player != null)
+            {
+                switch (itemType)
+                {
+                    case ItemType.B:
+                        player.AddBomb(); // 폭탄 개수 증가
+                        break;
+                    case ItemType.P:
+                        player.IncreasePower(); // 파워 업
+                        break;
+                }
+                Destroy(gameObject); // 아이템 제거
+            }
+        }
+    }
 }
