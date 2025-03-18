@@ -151,7 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 45
   bulletSpeed: 50
-  health: 6
+  health: 3
   eBullet: {fileID: 6705057860542046462, guid: a316e0215654654428a3d51ed40b9bc9, type: 3}
   maxShotDelay: 1
   curShotDelay: 0
